@@ -1,4 +1,4 @@
-# **`IPL Teams Twitter Sentimental Analysis`**
+# **`IPL Teams Twitter Sentimental Analysis based on their hashtags`**
 
 **How to run this project?**
 * Clone this project by command "**git clone (repo_name)**".
