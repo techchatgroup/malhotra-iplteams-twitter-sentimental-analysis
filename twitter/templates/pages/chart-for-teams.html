@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card mb-3">
+    <img style="height: 200px; width: 100%; display: block;"
+         src="https://pbs.twimg.com/profile_banners/15639696/1523009724/1500x500" alt="Card image">
+    <br>
+    <div class="container">
+        <div class="row">
+            <p><b>Choose your team below to know sentiments in pie chart :)</b></p>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush">
+        {% for key,value in context.items %}
+        <li class="list-group-item"><a href="/plot_team_sentiments/{{key}}"><b>{{key}}</b>
+            <div class="card mb-3">
+                <img style="height: 200px; width: 100%; display: block;" src="{{value}}" alt="Card image">
+            </div>
+        </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock  %}

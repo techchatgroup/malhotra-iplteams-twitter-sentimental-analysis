@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content  %}
+
+<h2>Top Ten Tweets</h2>
+{% for tweet in data %}
+<p class="text-muted">{{tweet}}</p>
+{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
